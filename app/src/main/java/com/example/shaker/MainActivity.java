@@ -7,7 +7,6 @@ import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.Random;
 
@@ -28,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
         shakeMeText = findViewById(R.id.shakeMeText);
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-        accelerometer = sensorManager
-                .getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 
         random = new Random();
 
